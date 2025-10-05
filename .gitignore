@@ -1,0 +1,29 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Streamlit
+.streamlit/
+
+# Data files (optional - remove if you want to include Excel files)
+*.xlsx
+*.csv
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files
+*.txt
+*.xlsx
+*.csv
+*.json
