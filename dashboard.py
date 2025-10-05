@@ -1,12 +1,19 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
 import numpy as np
 from datetime import datetime, timedelta
 import json
 import os
+
+# Import plotly with error handling
+try:
+    import plotly.express as px
+    import plotly.graph_objects as go
+    from plotly.subplots import make_subplots
+    PLOTLY_AVAILABLE = True
+except ImportError:
+    st.error("❌ Plotly not available. Please ensure plotly is installed.")
+    st.stop()
 
 # Page configuration
 st.set_page_config(
